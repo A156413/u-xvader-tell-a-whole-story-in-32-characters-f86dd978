@@ -5,13 +5,15 @@ Writes one Wi-Fi network name to $MAKEFUN_OUTPUT_DIR/entry.txt
 (default /output) and prints the same text to stdout.
 
 The name is fixed, deterministic, and needs no network, randomness,
-or clock: the joke is baked in.
+or clock: the joke is baked in. The name is the password itself --
+the ex's new boyfriend -- so one line tells the whole breakup:
+she left, for him, and the router still remembers his name.
 """
 
 import os
 import stat
 
-ENTRY = "Ex took the dog, I kept the WiFi"
+ENTRY = "Password: my ex's new boyfriend"
 
 
 def main() -> None:
